@@ -1,7 +1,10 @@
-function Calculator() {
-  return (
+import PropTypes from 'prop-types';
+
+const Calculator = ({ children }) => (
+  <>
     <div className="top-div">
-      <div className="zero-div"><div className="num-item  top-num">0</div></div>
+      {children}
+
       <div className="numerals">
         <div className="num-item">AC</div>
         <div className="num-item">±</div>
@@ -32,7 +35,9 @@ function Calculator() {
         <div className="num-item orange">=</div>
       </div>
     </div>
-  );
-}
-
+  </>
+);
+Calculator.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 export default Calculator;
