@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Calculator from './components/Calculator';
+import Quote from './components/Quote';
 import calculate from './logic/calculate';
 
 function App() {
@@ -23,6 +24,9 @@ function App() {
   return (
     <div className="App">
       <Calculator data={calculatorData} onButtonClick={handleButtonClick} />
+      <>
+        <Quote />
+      </>
     </div>
   );
 }
