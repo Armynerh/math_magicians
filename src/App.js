@@ -1,33 +1,19 @@
-import React, { useState } from 'react';
-import './App.css';
-import Calculator from './components/Calculator';
-import Quote from './components/Quote';
-import calculate from './logic/calculate';
+import { Routes, Route } from 'react-router-dom';
+import Layout from 'components/Layout';
+import Home from 'components/Home';
+import Calcrender from 'components/Calcrender';
+import QuoteRender from 'components/QouteRender';
 
 function App() {
-  const [calculatorData, setCalculatorData] = useState({
-    total: null,
-    next: null,
-    operation: null,
-  });
-
-  const handleButtonClick = (buttonName) => {
-    const newData = calculate(calculatorData, buttonName);
-    if (buttonName === '=') {
-      newData.next = null;
-      newData.operation = null;
-    }
-
-    setCalculatorData(newData);
-  };
-
   return (
-    <div className="App">
-      <Calculator data={calculatorData} onButtonClick={handleButtonClick} />
-      <>
-        <Quote />
-      </>
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="calculator" element={<Calcrender />} />
+        <Route path="quote" element={<QuoteRender />} />
+        <Route path="*" element={<div>If page not found it goes here</div>} />
+      </Route>
+    </Routes>
   );
 }
 
