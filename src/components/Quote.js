@@ -41,17 +41,14 @@ const Quote = () => {
   }
 
   return (
-    <div>
-      <h1>Quotes of the Day</h1>
-      <ul>
-        {quotes.map((quote) => (
-          <li key={uuidv4()}>
-            {quote.quote}
-            -
-            {quote.author}
-          </li>
-        ))}
-      </ul>
+    <div className="quote auto-margin ridge">
+      {quotes.map((quote) => (
+        <p key={uuidv4()}>
+          {quote.quote}
+          -
+          {quote.author}
+        </p>
+      ))}
     </div>
   );
 };
