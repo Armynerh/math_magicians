@@ -67,7 +67,7 @@ Read a random math-related quote.
 <!-- LIVE DEMO -->
 ## LIVE DEMO <a name="live-demo"></a>
 
-- [Math Magician ] https://math-magic-0phk.onrender.com
+- [Math Magician ](https://math-magic-0phk.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
