@@ -65,6 +65,12 @@ Read a random math-related quote.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
+## LIVE DEMO <a name="live-demo"></a>
+
+- [Math Magician ] https://math-magic-0phk.onrender.com
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- GETTING STARTED -->
 
